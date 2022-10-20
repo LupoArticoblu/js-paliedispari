@@ -25,7 +25,24 @@ function rollWord(richiesta){
     wordRolled += richiesta[i]; 
   }
 
+  console.log(wordRolled);
   return wordRolled;
 }
 
-alert('keypress',)
+//non riesco a continuare (non ho appreso le competenze necessarie)
+
+//PARI O DISPARI
+
+const number = document.querySelector('.number');
+
+const pairOrNot = prompt('scrivimi se pari o dispari');
+
+const pcNum = getRandomNumber(1, 5);
+
+let somma = number + pcNum;
+
+const result = checkResult(somma);
+
+function getRandomNumber(max, min){
+  return Math.floor(Math.random() * (max - min +1)) + min;
+}
